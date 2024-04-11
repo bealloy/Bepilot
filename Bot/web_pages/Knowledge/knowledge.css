@@ -1,0 +1,19 @@
+.sidebar {
+    background-color: black; /* Set sidebar background color to black */
+    color: white; /* Set text color to white */
+    padding: 20px;
+}
+
+.main_page {
+    background-color: grey; /* Set main page background color to grey */
+    padding: 20px;
+    text-align: center; /* Center-align content within the main page */
+}
+
+.button {
+    background-color: white; /* Set button background color to white */
+    color: black; /* Set button text color to black */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    cursor: pointer;
+}
