@@ -15,5 +15,5 @@ lang = {
     "knowledge":"Knowledge Base Only",
     "accept" : "Accept Files",
     "allow": "Allow Audio Input",
-    "upload" :"Upload File"
+    "upload" :"Upload File",
 }
