@@ -31,13 +31,13 @@
 
 <br/><br/><br/><br/><br/>
 <|text-center|
-<|Open Chat|button|> 
+<|{open_chat}|button|> 
 |><br/><br/>
 
 <|text-center|
 <|layout|columns=1 1|
 <option_list|
-Publish the chatbot
+<|{pub}|>
 |option_list>
 <toggle_buttons|
 <|toggle|>
@@ -46,7 +46,7 @@ Publish the chatbot
 
 <|layout|columns=1 1|
 <option_list|
-Save Chat History
+<|{save}|>
 |option_list>
 <toggle_buttons|
 <|toggle|>
@@ -55,7 +55,7 @@ Save Chat History
 
 <|layout|columns=1 1|
 <option_list|
-Password
+<|{passw}|>
 |option_list>
 <toggle_buttons|
 <|input|text|>
@@ -65,7 +65,7 @@ Password
 
 <|layout|columns=1 1|
 <option_list|
-Knowledge Base Only
+<|{know}|>
 |option_list>
 <toggle_buttons|
 <|toggle|>
@@ -74,7 +74,7 @@ Knowledge Base Only
 
 <|layout|columns=1 1|
 <option_list|
-Accept Files
+<|{acc}|>
 |option_list>
 <toggle_buttons|
 <|toggle|>
@@ -83,7 +83,7 @@ Accept Files
 
 <|layout|columns=1 1|
 <option_list|
-Allow Audio Input
+<|{allow}|>
 |option_list>
 <toggle_buttons|
 <|toggle|>
@@ -91,9 +91,6 @@ Allow Audio Input
 |>
 
 
-
-
-|>
 |>
 |main_page>
 |>

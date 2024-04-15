@@ -1,4 +1,4 @@
-eng = {
+lang = {
     "company_name" : "Be-Alloy",
     "create-new" : "Create New",
     "open-chat" : "Open Chat",

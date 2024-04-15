@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <|{company_name}|> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<|S|button|on_action=setting_button|>
+<|{img}|image|label=This is an image|on_action=setting_button|>
 <br/><br/>
 <|{create}|button|>
 |>

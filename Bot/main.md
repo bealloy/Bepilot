@@ -4,7 +4,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; 
 <|{company_name}|> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<|S|button|on_action=setting_button|>
+<|{img}|image|label=This is an image|on_action=setting_button|>
 <br/><br/>
 <|{create}|button|>
 |>
@@ -13,9 +13,9 @@
 <br/><br/><br/><br/><br/>
 <|text-center |
 ![logo](box.png)
-## Be-Alloy
-Start Building Your Bot<br/><br/><br/>
-<|Create New|button|on_action=create_new|>
+## Be-Alloy 
+<|{tag}|><br/><br/><br/>
+<|{create}|button|on_action=create_new|>
 |>
 |main_page>
 |>
