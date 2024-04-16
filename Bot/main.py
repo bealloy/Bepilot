@@ -23,7 +23,8 @@ def create_new(state):
 
 # setting page navigation function
 def setting_button(state):
-    navigate(state, "Setting_icon")
+    state.name =  "New Chat"
+    navigate(state, "Setting")
 
 
 # Defining customized theme
@@ -60,6 +61,7 @@ upl = lang["upload"]
 
 
 img = "setting_icon.png"
+logo_ = "minibox_.png"
 # assigning all markdown to pages variable
 pages ={
     "main" :main_ui,
@@ -76,12 +78,13 @@ pages ={
 if __name__ == "__main__":
 
     Gui(pages=pages).run(
-        title="BeAlloy",
+        title=company_name,
         favicon="box_.png",
         image = ("box.png","minibox_.png","setting_icon.png"),
         use_reloader=True,
         theme=my_theme,
-        watermark=no_logo
+        watermark=no_logo,
+
     )
 
 
