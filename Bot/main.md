@@ -1,8 +1,9 @@
 <|20 80|layout|gap=30px|
 <|sidebar|
 
-<|layout|columns=1 1|
-<|{logo_}|image|height="20px"|width="20px"|id=setting-button|>
+<|80 20|layout|gap=30px|
+<|{logo_}|image|height="20px"|width="20px"|id=setting-button|>   Be-Alloy
+
 <|{img}|image|label=This is an image|on_action=setting_button|height="20px"|width="20px"|id=setting-button|>
 |>
 

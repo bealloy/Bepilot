@@ -1,10 +1,10 @@
 <|20 80|layout|gap=30px|
 <|sidebar|
-![logo](minibox_.png)
-&nbsp;&nbsp;&nbsp;&nbsp; 
-<|{company_name}|> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<|S|button|on_action=setting_button|>
+<|80 20|layout|gap=30px|
+<|{logo_}|image|height="20px"|width="20px"|id=setting-button|>   Be-Alloy
+
+<|{img}|image|label=This is an image|on_action=setting_button|height="20px"|width="20px"|id=setting-button|>
+|>
 <br/><br/>
 <|{create}|button|>
 
