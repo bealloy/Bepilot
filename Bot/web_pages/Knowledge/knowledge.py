@@ -1,35 +1,22 @@
 import pandas as pd
 from taipy.gui import Markdown
-
 import taipy.gui.builder as tgb
 
 
-css_styles = """.sidebar {
-    background-color: black; /* Set sidebar background color to black */
-    color: white; /* Set text color to white */
-    padding: 20px;
-}
 
-.mainpage {
-    background-color: grey; /* Set main page background color to grey */
-    padding: 20px;
-    text-align: center; /* Center-align content within the main page */
-}
+import taipy.gui.builder as tgb
 
-.button {
-    background-color: white; /* Set button background color to white */
-    color: black; /* Set button text color to black */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border: none; /* Remove border */
-    cursor: pointer;
-}
+navigation = [("/Setting", "Setting"), ("/Knowledge", "Knowledge"),("/Security", "Security"),("/Function", "Function"),("/Flow", "Flow")]
 
-.container-bg {
-  background-color: rgb(80, 127, 172);
-}
-"""
 
-path = ""
+
+path = "File.pdf"
+File_description= "File description"
+
+
+with tgb.part():
+    tgb.text("{File_description}")
+
 def analyze_file(state):
     with open(state.path,"r", encoding="utf-8") as f:
         data = f.read()
@@ -42,4 +29,4 @@ with tgb.Page() as knowledge_ui:
                     on_action=analyze_file)
 
 
-knowledge_ui = Markdown("web_pages/knowledge/knowledge.md",style=css_styles)
+knowledge_ui = Markdown("web_pages/knowledge/knowledge.md")

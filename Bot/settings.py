@@ -25,3 +25,5 @@ know = lang["knowledge"]
 acc = lang["accept"]
 allow = lang["allow"]
 open_chat = lang["open-chat"]
+
+navigation = [("/Setting", "Setting"), ("/Knowledge", "Knowledge"),("/Security", "Security"),("/Function", "Function"),("/Flow", "Flow")]

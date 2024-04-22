@@ -1,5 +1,6 @@
 # importing taipy
 from taipy.gui import Gui,navigate
+import taipy.gui.builder as tgb
 
 # importing markdowns and function from folders
 from Local.en import *
@@ -24,13 +25,13 @@ def create_new(state):
 # setting page navigation function
 def setting_button(state):
     state.name =  "New Chat"
-    navigate(state, "Setting")
+    navigate(state, "Setting_Database")
 
 
 # Defining customized theme
 my_theme = {
     "palette": {
-    "background": {"default": "#222831"},
+    "background": {"default": "#303030"},
     "primary": {"main": "#9CAFAA"} 
     },
 }
@@ -61,7 +62,7 @@ upl = lang["upload"]
 
 
 img = "setting_icon.png"
-logo_ = "minibox_.png"
+logo_ = "minibox.png"
 # assigning all markdown to pages variable
 pages ={
     "main" :main_ui,

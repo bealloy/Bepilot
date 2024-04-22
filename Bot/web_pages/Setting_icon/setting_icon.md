@@ -1,12 +1,14 @@
-<|20 80|layout|gap=30px|
+<|20 80|layout|
 <|sidebar|
-<|80 20|layout|gap=30px|
-<|{logo_}|image|height="20px"|width="20px"|id=setting-button|>   Be-Alloy
+<|20 60 20|layout|
+<|{logo_}|image|height="5px"|width="5px"|id=setting-button|>
 
-<|{img}|image|label=This is an image|on_action=setting_button|height="20px"|width="20px"|id=setting-button|>
+<|{company_name}|text|height=30px|width=30px|>
+
+<|{img}|image|label=This is an image|on_action=setting_button|height=20px|width=20px|id=setting-button|>
 |>
 <br/><br/>
-<|{create}|button|>
+<|{create}|button|on_action=create_new|>
 |>
 
 
@@ -15,9 +17,14 @@
 Setting
 |>
 <br/><br/>
+<|10 90|layout|gap=30px|
+Language :  
 
+<|{Lang}|selector|lov=English;French|dropdown|>
+|>
+<br/>
 My SQL Settings:
-<|card|
+<|container|
 
 <|layout|columns=1 1|
 <option_list|
@@ -51,7 +58,7 @@ Password
 <br/><br/>
 
 MongoDB Settings :
-<|card|
+<|container|
 
 <|layout|columns=1 1|
 <option_list|

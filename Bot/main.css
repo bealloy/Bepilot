@@ -1,3 +1,20 @@
 #setting-button {
     border: none;
 }
+
+.taipy-button{
+    color: black;
+    background-color: white;
+    margin-bottom:2rem;
+  }
+
+.card{
+    background-color: black;
+  }
+.container{
+    background-color: #303030;
+    border : 1px;
+}
+.sidebar{
+    background-color: black;
+}
