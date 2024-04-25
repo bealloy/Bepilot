@@ -11,11 +11,12 @@ navigation = [("/Setting", "Setting"), ("/Knowledge", "Knowledge"),("/Security",
 
 
 path = "File.pdf"
-File_description= "File description"
+File_description= {
+    "File Name": ["File.pdf","File.pdf"],
+    "File Description":["File.pdf","File.pdf"]
+}
 
-
-with tgb.part():
-    tgb.text("{File_description}")
+tgb.table("{File_description}", show_all=True)
 
 def analyze_file(state):
     with open(state.path,"r", encoding="utf-8") as f:

@@ -46,9 +46,7 @@ width:100% !important;
 <|30 60 10|layout|gap=10px|
 <|{path}|>
 
-<|part|
-<|{File_description}|input|multiline|not active|label= File description|class_name=fullwidth|>
-|>
+<|{File_description}|table|>
 
 <|{img}|image|label=Database Setting|on_action=setting_button|height="20px"|width="20px"|id=setting-button|>
 
