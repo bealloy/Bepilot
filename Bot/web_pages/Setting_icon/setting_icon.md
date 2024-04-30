@@ -1,3 +1,4 @@
+<|toggle|theme|>
 <|20 80|layout|
 <|sidebar|
 <|20 60 20|layout|
@@ -24,7 +25,7 @@ Language :
 |>
 <br/>
 My SQL Settings:
-<|container|
+<|card|
 
 <|layout|columns=1 1|
 <option_list|
@@ -58,7 +59,7 @@ Password
 <br/><br/>
 
 MongoDB Settings :
-<|container|
+<|card|
 
 <|layout|columns=1 1|
 <option_list|
