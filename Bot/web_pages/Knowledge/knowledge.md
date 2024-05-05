@@ -43,10 +43,8 @@ width:100% !important;
 
 
 <br/><br/><br/><br/><br/>
-<|30 60 10|layout|gap=10px|
-<|{path}|>
-
-<|{File_description}|table|>
+<|80 20|layout|gap=30px|
+<|{File_description}|table|show_all|rowsw = [1:]|style=even_odd_style|>
 
 <|{img}|image|label=Database Setting|on_action=setting_button|height="20px"|width="20px"|id=setting-button|>
 

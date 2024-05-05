@@ -8,7 +8,11 @@ import taipy.gui.builder as tgb
 
 navigation = [("/Setting", "Setting"), ("/Knowledge", "Knowledge"),("/Security", "Security"),("/Function", "Function"),("/Flow", "Flow")]
 
-
+def even_odd_style(_1, index, _2):
+    if index % 2:
+        return "blue-cell"
+    else:
+        return "red-cell"
 
 path = "File.pdf"
 File_description= {
@@ -16,7 +20,7 @@ File_description= {
     "File Description":["File.pdf","File.pdf"]
 }
 
-tgb.table("{File_description}", show_all=True)
+tgb.table("{File_description}", style=even_odd_style)
 
 def analyze_file(state):
     with open(state.path,"r", encoding="utf-8") as f:

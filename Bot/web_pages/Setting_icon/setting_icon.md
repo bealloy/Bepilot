@@ -32,7 +32,7 @@ My SQL Settings:
 Host
 |option_list>
 <toggle_buttons|
-<|input|text|>
+<|{Host}|input|>
 |toggle_buttons>
 |>
 
@@ -41,7 +41,7 @@ Host
 Username
 |option_list>
 <toggle_buttons|
-<|input|text|>
+<|{User}|input|>
 |toggle_buttons>
 |>
 
@@ -50,10 +50,13 @@ Username
 Password
 |option_list>
 <toggle_buttons|
-<|input|text|>
+<|{passw}|input|>
 |toggle_buttons>
 |>
 
+<|text-center |
+<|{Connect}|button|on_click = connect_button|>
+|>
 
 |>
 <br/><br/>

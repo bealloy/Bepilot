@@ -1,17 +1,22 @@
-import sqlite3
+import mysql.connector
 
-conn = sqlite3.connect('Taipy.db')
+conn = mysql.connector.connect(
+    host='localhost',
+    user='root',
+    password='123456789',
+    database='Knowledge'
+)
 
 cursor = conn.cursor()
 
-cursor.execute('''CREATE TABLE IF NOT EXISTS users (
-                    id INTEGER PRIMARY KEY,
-                    username TEXT,
-                    email TEXT)''')
+cursor.execute('''CREATE TABLE IF NOT EXISTS knowledge (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    filename VARCHAR(255),
+                    description VARCHAR(255))''')
 
-cursor.execute("INSERT INTO users (username, email) VALUES (?, ?)", ('JohnDoe', 'john@example.com'))
+cursor.execute("INSERT INTO knowledge (filename, description) VALUES (%s, %s)", ('File.pdf', 'File Description'))
 
-cursor.execute("SELECT * FROM users")
+cursor.execute("SELECT * FROM knowledge")
 rows = cursor.fetchall()
 
 for row in rows:

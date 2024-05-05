@@ -1,6 +1,5 @@
 # importing taipy
 from taipy.gui import Gui,navigate
-import taipy.gui.builder as tgb
 
 # importing markdowns and function from folders
 from Local.en import *
@@ -10,17 +9,26 @@ from web_pages.Security.security import security_ui
 from web_pages.Functions.function import function_ui
 from web_pages.Flow.flow import flow_ui
 from settings import *
-from web_pages.Setting_icon.setting_icon import setting_icon_ui
+from web_pages.Setting_icon.setting_icon import *
 
 name = " "
 # main page markdown 
 main_ui = Markdown("main.md")
+img_edit = "img_edit.png"
 
+
+def even_odd_style():
+    return "all-cell"
+    
+def edit_button(state,name):
+    name = state.name
+    return name
 
 # create new function
 def create_new(state):
     state.name =  "New Chat"
     navigate(state, "Setting")
+
 
 # setting page navigation function
 def setting_button(state):
@@ -75,6 +83,8 @@ pages ={
 }
 
 
+
+
 # to run all pages
 if __name__ == "__main__":
 
@@ -83,7 +93,7 @@ if __name__ == "__main__":
         favicon="box_.png",
         image = ("box.png","minibox_.png","setting_icon.png"),
         use_reloader=True,
-        theme=my_theme,
+        theme=my_theme ,
         watermark=no_logo,
 
     )

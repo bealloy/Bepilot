@@ -10,10 +10,15 @@
 <br/><br/>
 <|{create}|button|on_action=create_new|>
 
+
 <|card|
+<|80 20|layout|gap=30px|
 <|text-center|
 <|{name}|>
 |>
+<|{img_edit}|image|label=This is an image|on_action=edit_button|height=20px|width=20px|id=setting-button|>
+|>
+
 |> 
 
 |>
